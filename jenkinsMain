@@ -53,7 +53,7 @@ pipeline {
       steps {
         dir('android') {
           sh 'chmod +x gradlew'
-          sh './gradlew assembleDebug'
+          sh './gradlew :app:assembleDebug'
         }
       }
     }
